@@ -1,2 +1,2 @@
-WinnerOS Learning Project
+# WinnerOS Learning Project
 Vitalii Shapoval
