@@ -1,2 +1,2 @@
-# vshap.github.io
-WinnerOS
+# WinnerOS Learning Project
+Vitalii Shapoval
