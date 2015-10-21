@@ -4,35 +4,80 @@
 	<meta charset="UTF-8">
 	<title>.:: WinnerOS (FEOnline) - Lesson 1 ::.</title>
 	<style>
-		body { background: #eee;font: normal 13pt Times; }
-		h1 { font: bold 16pt Times; text-align: center;padding-top: 50px; }
-		p { margin: 0 60px 0 60px;line-height: 1.5; }
-		li { margin: 0 40px 0 40px;line-height: 1.5; }
-		hr { width: 415px;margin-bottom: 5px; }
-		.img { margin: 0;text-align: center; }
-		#content { background: white;border: 2px solid #efefef;border-radius: 2px;box-shadow: 2px 2px 5px #888;; width: 510px;height: 750px;margin: 0 auto; }
+		body { 
+			background: #eee;
+			font: normal 13pt Times; 
+		}
+		h1 { 
+			font: bold 16pt Times; 
+			padding-top: 10px;
+			text-align: center; 
+
+		}
+		p { 
+			line-height: 1.5; 
+			margin: 0 0 0 20px;
+		}
+		span {
+			display: block;
+		}
+		ul { 
+			margin-bottom: 0; 
+		}
+		.img { 
+			margin: 0;
+			text-align: center; 
+		}
+		.main { 
+			background: white;
+			border-radius: 2px;
+			box-shadow: 0 0 5px #888;
+			height: 750px;
+			margin: 0 auto; 
+			width: 510px;
+		}
+		.content, .feedback {
+			border-bottom: 1px solid #000;
+			line-height: 1.5;
+			margin: 0 auto; 
+			padding: 20px 0 20px 0;
+			width: 415px;
+		}
+		.feedback {
+			border-bottom: none;
+		}
 	</style>
 </head>
 <body>
-<div id="content">
+<div class="main">
+
+<div class="content">
 	<h1>Шаповал Виталий Николаевич</h1>
-	<p class="img"><img src="vshap.jpg" alt="Мое фото" style="width: 135px;height: 135px;"></p>
+	<p class="img"><img src="ava.jpg" alt="Мое фото" style="width: 135px;height: 135px;"></p>
 	<p>IT-шник по призванию и по жизни</p>
-	<hr><br>
+</div>
+
+<div class="content">
 	<p>Хочу учить фронтенд, потому что:</p>
 	<ul>
 		<li>Это востребованно и перспективно</li>
 		<li>Отсутствие профильного образования хочу компенсировать реальными навыками</li>
 		<li>Веб - наше все</li>
 	</ul>
-	<hr><br>
-	<p>Мой контактный телефон<br>
-	+380502434250</p><br>
-	<p>Мой профиль на Фейсбук<br>
-	<a href="https://www.facebook.com/vitalii.shapoval" target="_blank">facebook.com</a></p>
-	<hr><br>
-	<p>Мой фидбек: <br>
-	Вижу цель - не вижу препятствий</p>
+</div>
+
+<div class="content">
+	<p>Мой контактный телефон
+	<span>+380502434250</span></p>
+	<p style="padding-top: 20px;">Мой профиль на Фейсбук
+	<span><a href="https://www.facebook.com/vitalii.shapoval" target="_blank">facebook.com</a></span></p>
+</div>
+
+<div class="feedback">
+	<p>Мой фидбек:
+	<span>Вижу цель - не вижу препятствий</span></p>
+</div>
+
 </div>
 </body>
 </html>
