@@ -1,0 +1,156 @@
+/* HEADER */
+.header_menu {
+	background: url(../img/hmenu_bg.png);
+	margin: 0 auto;
+	width: 966px;
+}
+
+.header_menu ul {
+	font-size: 0;
+	letter-spacing: -1px;
+	line-height: 0;
+}
+
+.header_menu li {
+	display: inline-block;
+	font: 15px opensans;
+	height: 30px;
+	letter-spacing: normal;
+	line-height: normal;
+	padding: 9px 0 0 23px;
+	text-shadow: 1px 1px 1px white;
+	width: 120px;
+}
+
+.header_menu li:hover {
+	background: url(../img/hmenu_bg_hover.png);
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
+	text-shadow: none;
+}
+
+.header_menu a {
+	color: white;
+}
+
+/* SIDEBAR */
+.side_menu {
+	float: left;
+	margin: 0;
+	padding: 39px 0 0 45px;
+	width: 241px;
+}
+
+.side_menu ul {
+	font-size: 0;
+	letter-spacing: -1px;
+	line-height: 0;
+}
+
+.side_menu li {
+	border: 1px solid #c8c8c8;
+	color: #656363;
+	display: block;
+	font: 13px opensans;
+	height: 26px;
+	letter-spacing: normal;
+	line-height: normal;
+	padding: 12px 0 0 22px;
+}
+.side_menu li:hover {
+	background: #f9f9f9;
+}
+.side_menu a {
+	color: black;
+}
+.side_menu a:hover {
+	color: #2c2c2c;
+	padding-left: 15px;
+}
+
+/* CONTENT */
+
+body {
+	background: #f9f9f9;
+}
+h1  {
+	font: 48px Tahoma;
+	padding: 40px 0 33px 42px;
+}
+.main {
+	background: white;
+	box-shadow: 0 0 3px #888;
+	height: 950px;
+	margin: 0 0 0 154px;
+	width: 1060px;
+}
+img {
+	display: -moz-inline-box;
+	display: inline-block;
+	display: inline-table;
+	height: auto;
+	margin: 15px;
+	overflow: visible;
+	vertical-align: bottom;
+}
+.img {
+	border: 1px solid #c8c8c8;
+	height: 367px;
+	margin: 40px 0 0 334px;
+	padding-top: 30px;
+	position: relative;
+	text-align: center;
+	width:677px;
+	z-index: 2;
+}
+@font-face {
+	font-family: opensans;
+	src: url(../fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+.content {
+	color: #2c2c2c;
+	font: 13px opensans;
+	line-height: 1.65;
+	margin: 34px 74px 0 359px;
+}
+a {
+	text-decoration: none;
+}
+
+/* FOOTER */
+.footer_menu {
+	background: #e1e1e1;
+	font: 13px opensans;
+	height: 40px;
+	margin: 58px 0 0 46px;
+	width: 966px;
+}
+.footer_menu ul {
+	font-size: 0;
+	letter-spacing: -1px;
+	line-height: 0;
+}
+.footer_menu li {
+	display: inline-block;
+	font: 13px opensans;
+	height: 30px;
+	letter-spacing: normal;
+	line-height: normal;
+	padding: 11px 69px 0 24px;
+	text-align: center;
+}
+
+.footer_menu a:hover {
+	text-decoration: underline;
+}
+
+.footer_menu a {
+	color: black;
+}
+.copyright {
+	display: inline;
+	float: right;
+	font: 13px opensans;
+	margin: -27px 17px 0 0;
+	width: 20%;
+}
