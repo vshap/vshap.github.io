@@ -1,3 +1,17 @@
+@font-face {
+	font-family: opensans;
+	src: url(../fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+body {
+	background: #f9f9f9;
+}
+
+a {
+	text-decoration: none;
+}
+
+
 /* HEADER */
 .header_menu {
 	background: url(../img/hmenu_bg.png);
@@ -18,7 +32,6 @@
 	letter-spacing: normal;
 	line-height: normal;
 	padding: 9px 0 0 23px;
-	text-shadow: 1px 1px 1px white;
 	width: 120px;
 }
 
@@ -26,12 +39,13 @@
 	background: url(../img/hmenu_bg_hover.png);
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
-	text-shadow: none;
+	margin: 0 -1px 0 -1px;
 }
 
 .header_menu a {
 	color: white;
 }
+
 
 /* SIDEBAR */
 .side_menu {
@@ -45,6 +59,7 @@
 	font-size: 0;
 	letter-spacing: -1px;
 	line-height: 0;
+	margin-top: 1px;
 }
 
 .side_menu li {
@@ -56,27 +71,26 @@
 	letter-spacing: normal;
 	line-height: normal;
 	padding: 12px 0 0 22px;
+	margin-top: -1px;
 }
+
 .side_menu li:hover {
 	background: #f9f9f9;
-}
-.side_menu a {
-	color: black;
-}
-.side_menu a:hover {
 	color: #2c2c2c;
 	padding-left: 15px;
 }
 
-/* CONTENT */
-
-body {
-	background: #f9f9f9;
+.side_menu a {
+	color: black;
 }
-h1  {
+
+
+/* CONTENT */
+h1 {
 	font: 48px Tahoma;
 	padding: 40px 0 33px 42px;
 }
+
 .main {
 	background: white;
 	box-shadow: 0 0 3px #888;
@@ -84,6 +98,7 @@ h1  {
 	margin: 0 0 0 154px;
 	width: 1060px;
 }
+
 img {
 	display: -moz-inline-box;
 	display: inline-block;
@@ -93,6 +108,7 @@ img {
 	overflow: visible;
 	vertical-align: bottom;
 }
+
 .img {
 	border: 1px solid #c8c8c8;
 	height: 367px;
@@ -103,19 +119,14 @@ img {
 	width:677px;
 	z-index: 2;
 }
-@font-face {
-	font-family: opensans;
-	src: url(../fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
-}
+
 .content {
 	color: #2c2c2c;
 	font: 13px opensans;
 	line-height: 1.65;
 	margin: 34px 74px 0 359px;
 }
-a {
-	text-decoration: none;
-}
+
 
 /* FOOTER */
 .footer_menu {
@@ -125,11 +136,13 @@ a {
 	margin: 58px 0 0 46px;
 	width: 966px;
 }
+
 .footer_menu ul {
 	font-size: 0;
 	letter-spacing: -1px;
 	line-height: 0;
 }
+
 .footer_menu li {
 	display: inline-block;
 	font: 13px opensans;
@@ -147,6 +160,7 @@ a {
 .footer_menu a {
 	color: black;
 }
+
 .copyright {
 	display: inline;
 	float: right;
