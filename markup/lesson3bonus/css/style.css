@@ -1,0 +1,125 @@
+/* HEADER */
+.logo {
+	float: left;
+	height: 200px;
+	width: 960px;
+}
+
+.sub_logo {
+	background: url(../img/PalmTree.png) no-repeat;
+	background-position: left 212px top 57px;
+	height: 200px;
+	margin: 0;
+	opacity: 0.1;
+	overflow: hidden;
+	position: absolute;
+	width: 960px;
+	z-index: 0;
+}
+
+.logo span {
+	display: block;
+	font-size: 11px;
+	padding: 5px 0 0 160px;
+}
+
+.logo img {
+	padding: 132px 0 0 71px;
+}
+
+.contacts {
+	float: right;
+	font-size: 11px;
+	line-height: 1.5;
+	padding: 149px 0 0 785px;
+	position: absolute;
+	text-align: left;
+	width: 156px;
+	z-index: 1;
+}
+
+.contacts span {
+	display: block;
+	font-size: 8px;
+	line-height: 1.5;
+}
+
+/* CONTENT */
+body {
+	background: #030303;
+	color: #e6e6e6;
+	font-family: Tahoma;
+	margin: 0;
+}
+
+a {
+	color: #e6e6e6;
+	text-decoration: none;
+}
+
+.main { 
+	background-size: 100%;
+	background: url(../img/bg.jpg) no-repeat;
+	height: 882px;
+	margin: 0;
+	position: absolute;
+	width: 960px;
+	z-index: -3;
+}
+
+.outer1, .outer2 {
+	position: relative;
+	text-align: center;
+}
+
+.outer1 {
+	margin: 14px 0 0 0;
+}
+
+.outer2 {
+	margin: 45px 0 0 0;
+}
+
+.outer1 img, .outer2 img {
+	border-radius: 1px;
+	border: 3x solid #333333;
+	display: -moz-inline-box;
+	display: inline-block;
+	display: inline-table;
+	height: auto;
+	overflow: visible;
+	position: relative;
+	vertical-align: middle;
+	z-index: -2;
+}
+
+.outer1 figure, .outer2 figure {
+	display: -moz-inline-box;
+	display: inline-block;
+	display: inline-table;
+	height: auto;
+	margin: 4px;
+	overflow: visible;
+	vertical-align: middle;
+}
+
+.outer1 figcaption, .outer2 figcaption {
+	padding-top: 1px;
+}
+
+.border {
+	border-radius: 2px;
+	border: 2px solid #9d9d9d;
+	box-shadow: inset 0px 0px 1px 2px #333333;
+}
+
+.border:hover {
+	border: 2px solid #333333;
+}
+
+/* FOOTER */
+.copy {
+	font-size: 11px;
+	margin: 182px 0 0 0;
+	text-align: center;
+}
