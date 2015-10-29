@@ -13,8 +13,14 @@ a {
 
 
 /* HEADER */
+.logo {
+	padding: 35px 0 25px 29px;
+}
 .header_menu {
-	background: url(../img/hmenu_bg.png);
+	background: #5e5e5e;
+	background: -webkit-linear-gradient(#5e5e5e 0%, #444343 100%);
+	background: -o-linear-gradient(#5e5e5e 0%, #444343 100%);
+	background: linear-gradient(#5e5e5e 0%, #444343 100%);
 	margin: 0 auto;
 	width: 966px;
 }
@@ -31,12 +37,16 @@ a {
 	height: 30px;
 	letter-spacing: normal;
 	line-height: normal;
-	padding: 9px 0 0 23px;
+	padding: 9px 0 0 9px;
+	text-align: center;
 	width: 120px;
 }
 
 .header_menu li:hover {
-	background: url(../img/hmenu_bg_hover.png);
+	background: #4a4a4a;
+	background: -webkit-linear-gradient(#4a4a4a 0%, #2c2c2c 100%);
+	background: -o-linear-gradient(#4a4a4a 0%, #2c2c2c 100%);
+	background: linear-gradient(#4a4a4a 0%, #2c2c2c 100%);
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
 	margin: 0 -1px 0 -1px;
@@ -51,7 +61,7 @@ a {
 .side_menu {
 	float: left;
 	margin: 0;
-	padding: 39px 0 0 45px;
+	padding: 41px 0 0 45px;
 	width: 241px;
 }
 
@@ -59,7 +69,7 @@ a {
 	font-size: 0;
 	letter-spacing: -1px;
 	line-height: 0;
-	margin-top: 1px;
+	border-top: 1px solid #c8c8c8;
 }
 
 .side_menu li {
@@ -67,17 +77,17 @@ a {
 	color: #656363;
 	display: block;
 	font: 13px opensans;
-	height: 26px;
+	height: 27px;
 	letter-spacing: normal;
 	line-height: normal;
 	padding: 12px 0 0 22px;
-	margin-top: -1px;
+	border-top: 0;
 }
 
 .side_menu li:hover {
 	background: #f9f9f9;
 	color: #2c2c2c;
-	padding-left: 15px;
+	padding-left: 37px;
 }
 
 .side_menu a {
@@ -95,7 +105,7 @@ h1 {
 	background: white;
 	box-shadow: 0 0 3px #888;
 	height: 950px;
-	margin: 0 0 0 154px;
+	margin: 0 auto;
 	width: 1060px;
 }
 
@@ -112,7 +122,7 @@ img {
 .img {
 	border: 1px solid #c8c8c8;
 	height: 367px;
-	margin: 40px 0 0 334px;
+	margin: 41px 0 0 334px;
 	padding-top: 30px;
 	position: relative;
 	text-align: center;
