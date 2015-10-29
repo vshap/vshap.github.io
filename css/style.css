@@ -1,0 +1,87 @@
+body {
+	background: #fff url(../img/bg_body.gif) 0 0;
+	font: 12px Arial,sans-serif;
+}
+
+h1 {
+	color: #141414;
+	font: 20px Arial,sans-serif;
+	padding: 20px 0 20px 20px;
+}
+
+a {
+	color: #141414;
+	text-decoration: none;
+}
+
+.main {
+	background: #fff;
+	margin: 0 auto;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-radius: 2px;
+	box-shadow: 0 0 3px #888;
+	width: 900px;
+}
+
+
+.outer1, .outer2 {
+	position: relative;
+	text-align: center;
+	z-index: 0;
+}
+
+.outer1 {
+	margin: 14px 0 0 0;
+}
+
+.outer2 {
+	margin: 45px 0 0 0;
+}
+
+.outer1 img, .outer2 img {
+	border-radius: 1px;
+	border: 3x solid #333333;
+	display: -moz-inline-box;
+	display: inline-block;
+	display: inline-table;
+	height: auto;
+	overflow: visible;
+	position: relative;
+	vertical-align: middle;
+	z-index: -1;
+}
+
+.outer1 figure, .outer2 figure {
+	display: -moz-inline-box;
+	display: inline-block;
+	display: inline-table;
+	height: auto;
+	margin: 4px;
+	max-width: 300px;
+	overflow: visible;
+	vertical-align: middle;
+}
+
+.outer1 figcaption, .outer2 figcaption {
+	padding-top: 1px;
+	height: 50px;
+}
+
+.border {
+	border-radius: 2px;
+	border: 2px solid #9d9d9d;
+	box-shadow: inset 0px 0px 1px 2px #333333;
+}
+
+.border:hover {
+	border: 2px solid #333333;
+}
+
+
+
+.footer {
+	background: #141414;
+	height: 100px;
+	text-align: center;
+}
