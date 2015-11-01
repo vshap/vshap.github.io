@@ -46,9 +46,10 @@ a {
 }
 .contacts img {
 	padding: 4px 0 0 4px;
+	border-bottom: 1px solid transparent;
 }
 .contacts img:hover {
-	box-shadow: 1px 1px 2px yellow;
+	border-bottom: 1px solid #eee;
 }
 
 /* CONTENT */
