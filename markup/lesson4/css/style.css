@@ -1,0 +1,231 @@
+body {
+  background: #0c739f url(../img/bg.jpg) 0 0 repeat-x;
+  font-family: Arial, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+h1 {
+  font-size: 18px;
+  color: #424c43;
+  text-align: center;
+  line-height: 2;
+  text-shadow: 1px 1px 2px grey;
+}
+.main {
+  width: 1000px;
+  border-bottom: 2px solid black;
+  box-shadow: 0 2px 5px grey;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+/* HEADER */
+
+.header {
+  background: #fff url(../img/logo.jpg) 30px 10px no-repeat;
+  width: 1000px;
+  height: 175px;
+  border-bottom: 1px solid #128aa7;
+}
+.photo {
+  border-bottom: 1px solid #128aa7;
+  background-size: 100%;
+  height: 237px;
+  background: url(../img/photo.jpg) 0 0 no-repeat;
+}
+.contacts {
+  font-size: 12px;
+  color: #128aa7;
+  z-index: 1;
+  position: absolute;
+  margin-left: 832px;
+}
+.contacts span {
+  display: block;
+  line-height: 1.5;
+}
+.contacts a {
+  text-decoration: none;
+  color: #128aa7;
+}
+.contacts .shadow {
+  text-shadow: 1px 1px 1px grey;
+  line-height: 2;
+}
+.logo_text {
+  font-size: 12px;
+  color: #128aa7;
+  padding: 110px 0 0 105px;
+  width: 250px;
+  float: left;
+}
+.countries {
+  font-size: 10px;
+  color: #128aa7;
+  width: 500px;
+  text-align: center;
+  padding: 104px 0 0 547px;
+}
+.countries figure {
+  display: inline-block;
+  padding: 5px;
+}
+.countries a {
+  color: #128aa7;
+}
+
+/* MENU */
+
+.nav {
+  width: 1000px;
+  height: 30px;
+  border-top: 1px solid #cacbcb;
+  border-bottom: 1px solid black;
+  background: #333;
+  -moz-box-shadow: 0px 4px 5px #808080;
+  -webkit-box-shadow: 0px 4px 5px #808080;
+  box-shadow: 0px 4px 5px #808080;
+  color: #fff;
+  font: 14px Tahoma;
+  display: table;
+  position: relative;
+}
+.nav li {
+  float: none;
+  margin-right: 10px;
+  position: relative;
+  display: table-cell;
+}
+.nav li a {
+  display: block;
+  padding: 5px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+  /* Тень текста, чтобы приподнять его на немного */
+}
+.nav li a:hover {
+  color: #fff;
+  background: #333;
+  text-decoration: underline;
+}
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+
+.nav ul {
+  display: block;
+  float: none;
+  list-style: none;
+  position: absolute;
+  left: -9999px;
+  /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+  opacity: 0;
+  /* Устанавливаем начальное состояние прозрачности */
+  -webkit-transition: 0.25s linear opacity;
+  /* В Webkit выпадающие пункты будут проявляться */
+  text-align: center;
+  -moz-box-shadow: 0px 4px 5px #808080;
+  -webkit-box-shadow: 0px 4px 5px #808080;
+  box-shadow: 0px 4px 5px #808080;
+  margin-top: 4px;
+}
+.nav ul li {
+  float: none;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+.nav ul a {
+  white-space: nowrap;
+  /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+  display: block;
+  text-align: left;
+  padding-left: 10px;
+}
+.nav li:hover ul {
+  /* Выводим выпадающий пункт при наведении курсора */
+  left: 0;
+  /* Приносим его обратно на экран, когда нужно */
+  opacity: 1;
+  /* Делаем непрозрачным */
+}
+.nav li:hover a {
+  /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
+  background: #333;
+  text-decoration: none;
+}
+.nav li:hover ul a {
+  /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+  text-decoration: none;
+}
+.nav li:hover ul li a:hover {
+  /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+  background: #333;
+  background: rgba(51, 51, 51, 0.75);
+  /* Будет полупрозрачным */
+  text-decoration: none;
+}
+
+/* CONTENT */
+
+.content {
+  width: 1000px;
+  overflow: hidden;
+  /* чтобы лишее обрезалось */
+  padding-bottom: 15px;
+}
+.leftColumn {
+  width: 208px;
+  float: left;
+  background: #edeef0;
+  border-left: 1px solid #c7cacf;
+  border-right: 1px solid #c7cacf;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+}
+.centerColumn {
+  font-size: 14px;
+  width: 580px;
+  float: left;
+  line-height: 1.5;
+  background: white;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+}
+.centerColumn:first-letter {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  padding-left: 10px;
+}
+.rightColumn {
+  width: 208px;
+  float: left;
+  background: #edeef0;
+  border-left: 1px solid #c7cacf;
+  border-right: 1px solid #c7cacf;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+}
+.leftColumn span, .rightColumn span {
+  display: inline-block;
+  font-size: 14px;
+  color: #424c43;
+  line-height: 1.5;
+  padding: 0 0 0 15px;
+}
+.text {
+  padding: 10px 10px 0 10px;
+}
+
+/* FOOTER */
+
+.footer {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+}
