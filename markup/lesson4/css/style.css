@@ -102,8 +102,6 @@ h1 {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
-  /* Тень текста, чтобы приподнять его на немного */
 }
 .nav li a:hover {
   color: #fff;
