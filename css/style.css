@@ -94,7 +94,7 @@ a {
 
 .outer img {
 	border-radius: 1px;
-	border: 3x solid #333333;
+	border: 3px solid #333333;
 	display: -moz-inline-box;
 	display: inline-block;
 	display: inline-table;
