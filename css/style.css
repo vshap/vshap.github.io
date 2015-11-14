@@ -86,9 +86,6 @@ a {
 	position: relative;
 	text-align: center;
 	z-index: 0;
-}
-
-.outer {
 	margin: 14px 0 0 0;
 }
 
@@ -107,11 +104,10 @@ a {
 
 .outer figure {
 	display: -moz-inline-box;
-	display: inline-block;
 	display: inline-table;
 	height: auto;
 	margin: 4px;
-	width: 250px;
+	width: 200px;
 	max-width: 300px;
 	overflow: visible;
 	vertical-align: middle;

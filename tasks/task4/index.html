@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN"
+   "_THE_LATEST_VERSION_/frameset.dtd">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<title>.: Создание простейшей Web-страницы :.</title>
+<link rel="stylesheet" href="images/main.css" type="text/css">
+<script language="JavaScript">
+{
+	if (top.frames.length!=0)
+	top.location=self.document.location;
+	self.moveTo(0,0);
+	self.resizeTo(screen.availWidth,screen.availHeight);
+}
+</script>
+</head>
+<FRAMESET ROWS="75,*" FRAMESPACING="0" BORDER="0" FRAMEBORDER="0">
+	<FRAME SRC="top.html" SCROLLING="no" NORESIZE>
+	<FRAMESET COLS="220,*" FRAMESPACING="0" BORDER="0" FRAMEBORDER="0">
+		<FRAME NAME="menu" SRC="menu.html" target="display" SCROLLING="no">
+		<FRAME NAME="display" SRC="titul.html" SCROLLING="auto" NORESIZE TARGET="_self">
+	</FRAMESET>
+</FRAMESET>
+</HTML>
