@@ -34,7 +34,7 @@
 	</header>
 	<!-- end header -->
 
-	<div class="align_center_to_left">
+	<!-- <div class="align_center_to_left"> -->
 		<!-- begin wrapper -->
 		<div class="wrapper">
 			<!-- begin wrapper_head -->
@@ -46,14 +46,16 @@
 			<div class="wrapper_form">
 				<!-- begin form_input -->
 				<div class="form_input">
-					<form class="" action="#" method="post">
-						<a href="#"><img src="img/LogFB.png" alt="" /></a>
+					<form id="CreateAccount" action="#" method="post">
+						<div>
+							<a href="" class="button-fb fb">Log In <span>with</span> Facebook</a>
+						</div>
 						<span>OU</span>
-						<input type="text" name="name" value="" placeholder="First Name">
+						<input type="text" name="name" value="" placeholder="First Name" required>
 						<input type="text" name="name" value="" placeholder="Last Name">
-						<input type="email" name="name" value="" placeholder="Email Address">
-						<input type="password" name="name" value="" placeholder="Choose Password">
-						<input type="password" name="name" value="" placeholder="Password Confirm">
+						<input type="email" name="name" value="" placeholder="Email Address" required>
+						<input type="password" name="name" value="" placeholder="Choose Password" required>
+						<input type="password" name="name" value="" placeholder="Password Confirm" required>
 						<div class="check">
 							<div class="option">
 								<input type="checkbox" name="name" id="send_updates" value="">
@@ -61,7 +63,7 @@
 							</div>
 							Send me Youbike updates and tips
 						</div>
-						<button type="button" name="button">Create My Account</button>
+						<button>Create My Account</button>
 					</form>
 					<p>
 						By clicking the button above, you agree to the Terms of Service
@@ -75,7 +77,7 @@
 			<!-- end wrapper_form -->
 		</div>
 		<!-- end wrapper -->
-	</div>
+	<!-- </div> -->
 </div>
 <!-- end main -->
 
