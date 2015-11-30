@@ -1,3 +1,5 @@
+
+// Функция возведения заданного числа в указанную степень
 function pow(base, exp) {
   var result = 1;
   for(var cnt = 0; cnt < exp; cnt++) {
@@ -6,12 +8,14 @@ function pow(base, exp) {
   return result;
 }
 
+//--------------------------------------
 var base = prompt('Введите число', 1);
 var exp = prompt('Введите степень', 1);
 
 var result = pow(base, exp)
 alert(result);
 
+// вывод результатов в консоль
 console.log('Основание = ', base);
 console.log('Степень = ', exp);
 console.log('Результат = ', result);
