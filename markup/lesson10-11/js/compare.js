@@ -1,6 +1,5 @@
-
 // Функция поиска заданного элемента в массиве
-function check_user(obj) {
+function check_user(arr) {
   var flag;
 
   for (var i = 0; i < user.length; i++) {
@@ -12,7 +11,7 @@ function check_user(obj) {
   if (flag) {
     alert(input + ', вы успешно вошли');
   } else {
-    alert(input + ', вы не в списке!');
+      alert(input + ', вы не в списке!');
   }
 }
 
@@ -22,7 +21,13 @@ var user = new Array(); // создаем новый массив
 
 do {
   user[i] = prompt('Введите имя', '');
-  i++;
+  user[i] = user[i].trim();
+    if (user[i]) {
+      i++;
+    } else {
+        alert("Вы не ввели имя!");
+        user[i] = prompt('Введите имя', '');
+    }
 } while (i < 5);
 
 console.log(user);
@@ -31,4 +36,9 @@ console.log(user);
 var input = prompt('Имя для проверки', '');
 
 // проверяем наличие пользователя в списке доступа
-check_user(input);
+if (input.trim()) {
+  check_user(input.trim());
+} else {
+    alert("Вы не ввели имя для проверки!");
+    var input = prompt('Имя для проверки', '');
+}
