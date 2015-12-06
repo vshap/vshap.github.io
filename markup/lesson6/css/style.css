@@ -84,7 +84,101 @@ header a:hover {
 .main {
 		height: 100%;
 		min-height: 100%;
+        overflow: hidden;
+    margin-top: 10px;
 }
+
+.menuKatalog {
+      width: 190px;
+  float: left;
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+}
+
+.tovar {
+    font: 14px 'Lucida Sans Unicode',Arial,sans-serif;
+    background-image: linear-gradient(to top, #a1b3bb, #e5e7e8); 
+    font-size: 14px;
+    width: 526px;
+    height: 627px;
+  float: left;
+  line-height: 1.5;
+/*
+  padding-bottom: 20000px;
+  margin-bottom: -20000px
+*/
+}
+
+.outer {
+    margin: 10px 0 10px 0;
+    position: relative;
+	text-align: center;
+}
+.outer img {
+    display: -moz-inline-box;
+	display: inline-block;
+	display: inline-table;
+/*	display: block;*/
+    height: 118px;
+	overflow: visible;
+	position: relative;
+    margin: 5px;
+}
+.outer figure {
+    display: -moz-inline-box;
+	display: inline-block;
+	display: inline-table;
+	height: 129px;
+    width: 139px;
+	margin: 4px;
+	overflow: visible;
+/*	vertical-align: middle;*/
+}
+.name {
+    color: #206988;
+    font-size: 15px;
+}
+.outer figcaption {
+    line-height: 15px;
+}
+.outer figcaption span {
+    display: block;
+    color: #1f2528;
+    font-size: 13px;
+}
+
+.price {
+    font: bold 16px Arial,sans-serif;
+    font-style: italic;
+    color: #114165;
+    line-height: 16px;
+    
+}
+figcaption.price span {
+    font-size: 12px;
+    color: #114165;
+    display: inline;
+}
+
+.border {
+    background: #ffffff;
+    border-radius: 7px;
+	border: 3x solid #a4aeb1;
+    width: 139px;
+    height: 129px;
+    vertical-align: middle;
+    margin: 1px 0 5px 0;
+}
+
+.brend {
+    width: 190px;
+    float: left;
+/*
+  padding-bottom: 20000px;
+  margin-bottom: -20000px;
+*/
+}
+
 
 .brandLogo {
 		margin: 20px 0 20px 0;
@@ -113,3 +207,24 @@ footer {
 .copy a {
 	color: #7f4740;
 }
+
+/* Clear border for div with float */
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+/* Хак для IE 6 и 7 спрятанный от IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/* Конец хака */
