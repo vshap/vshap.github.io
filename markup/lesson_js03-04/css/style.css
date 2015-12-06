@@ -1,0 +1,92 @@
+html, body {
+	height: 100%;
+	min-height: 100%;
+    color: black;
+    font-family: Arial,sans-serif;
+}
+
+h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Возвращаем нумерацию */
+ol, li {
+    font-size: 18px;
+    list-style: decimal;
+}
+
+/* CONTENT */
+.main {
+	height: 100%;
+	min-height: 100%;
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* Переопределяем стиль кнопки */
+.btn {
+    background-color: #cfe2f3;
+    border-radius: 0;
+    border: 2px solid #000000;
+    color: #000000;
+}
+/* Центрируем кнопку */
+.button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* СТИЛИЗАЦИЯ CHECKBOX's 
+Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс */
+.chkBox {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 10px;
+    height: 10px;
+}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен */
+.chkBox + label {
+    cursor: pointer;
+}
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9+.
+Поскольку старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают */
+
+/* Прячем оригинальный чекбокс */
+.chkBox:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+.chkBox:not(checked) + label {
+    position: relative; /* будем позиционировать псевдочекбокс относительно label */
+    padding: 0 0 0 20px; /* оставляем слева от label место под псевдочекбокс */
+    font-size: 16px;
+}
+/* Оформление чекбокса в выключенном состоянии (фон) */
+.chkBox:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #000000;
+    background: #cfe2f3;
+    line-height: 20px;
+}
+
+/* Меняем фон чекбокса, когда он включен. */
+.chkBox:checked + label:before {
+    border: none;
+    background: rgba(255, 255, 255, 1);
+    top: 1px;
+    left: -2px;
+    font-size: 20px;
+    font-weight: bold;
+    content: '\2611';
+}
