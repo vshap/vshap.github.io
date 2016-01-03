@@ -1,3 +1,7 @@
+/**
+ * [app description]
+ * @type {Object}
+ */
 var app = {
     createElement: function(params) {
         var element = document.createElement(params.tagName);
@@ -43,7 +47,7 @@ var app = {
                     inputType: 'checkbox',
                 });
 
-                label.insertAdjacentElement('afterBegin', checkbox);
+                label.('afterBegin', checkbox);
             }
         }
     }

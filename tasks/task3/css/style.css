@@ -1,0 +1,87 @@
+body {
+	background: #ffffff url(../img/bg.png);
+  color: #000000;
+}
+p {
+	font: 18px Georgia, "Times New Roman", Times, serif;
+	color: #999999;
+	margin: 10px 0 10px 0;
+}
+p:first-letter {
+	font: bold 18px Georgia, "Times New Roman", Times, serif;
+	color: Black;
+}
+
+ul,ol {
+	font: 18px "Times New Roman", Times, serif;
+	color: #2F4F4F;
+	margin: 10px 0 10px 0;
+}
+
+.babytd {
+  font: 16px Arial, Helvetica, sans-serif;
+  color: #FF9900;
+  word-wrap: nowrap;
+}
+.babytd a:link {
+  color: #FF9900;
+  text-decoration: none;
+}
+.babytd a:visited {
+  color: #666666;
+}
+.babytd a:hover {
+  color: #333333;
+  text-decoration: underline;
+}
+.babytd a:active {
+  color: #333333;
+  text-decoration: underline;
+}
+.orangehead {
+  font: normal 40px Arial, Helvetica, sans-serif;
+  color: #FFBE63;
+  margin: 0;
+}
+.grayhead {
+  font: 40px Arial, Helvetica, sans-serif;
+  color: #CCCCCC;
+  margin: 0;
+}
+
+#splash {
+  position:absolute;
+  left:64px;
+  top:161px;
+  width:540px;
+  height:234px;
+  z-index:6;
+  visibility: visible;
+}
+#daddyLayer {
+  position:absolute;
+  width:580px;
+  height:82px;
+  z-index:1;
+  left: 12px;
+  top: 20px;
+  overflow: hidden;
+}
+#mommyLayer {
+  position: absolute;
+  width: 539px;
+  height: 39px;
+  z-index: 1;
+  left: 33px;
+  top: 9px;
+  overflow: hidden;
+  clip: rect(0 539 39 0);
+}
+#babyLayer {
+  position: absolute;
+  width: 2000px;
+  height: 28px;
+  z-index: 1;
+  top: 11px;
+  left: 0px;
+}

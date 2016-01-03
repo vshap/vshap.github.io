@@ -1,0 +1,64 @@
+body, p, ul, ol {
+	font: normal 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #999966;
+	margin: 0;
+}
+body {
+	background: #CCCC99 url(../img/NEWBACKGROUNDB2.GIF) repeat-x;
+}
+td {
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #666633;
+}
+p:first-letter {
+	font: bold 16px Verdana, Arial, Helvetica, sans-serif;
+	color: #BDB76B;
+}
+h1 {
+	font: 24px Georgia, "Times New Roman", Times, serif;
+	color: #87CEFA;
+	margin: 12px 0px 0px 0px;
+}
+
+a:link {
+	color: #333333;
+	text-decoration: underline;
+}
+a:visited {
+	color: #9C9A63;
+	text-decoration: underline;
+}
+a:hover {
+	color: #FFFFFF;
+	background-color: #9C9A63;
+}
+a:active {
+	color: #333333;
+	text-decoration: underline;
+}
+
+.smallstuff {
+	font: 12px sans-serif;
+	color: #000000;
+	margin: 12px 0px 12px 0px;
+}
+.spaced {
+	font: normal 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #999966;
+}
+.bigger {
+	font: bold 16px Arial, Helvetica, sans-serif;
+	color: #BDB76B;
+}
+.drop {
+	font: bold 24px Trebuchet, Arial, Helvetica, sans-serif;
+	color: #999966;
+}
+.tabstuff {
+	font: bold 16px Arial, Helvetica, sans-serif;
+	color: #000000;
+	}
+.smallinter {
+	font: 12px/16px Verdana, Arial, Helvetica, sans-serif;
+	color: #666600;
+}

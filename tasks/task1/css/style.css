@@ -1,0 +1,86 @@
+h1 {
+  font: normal 28px Georgia, "Times New Roman", Times, serif;
+  color: #CCCCCC;
+  letter-spacing: 3px;
+}
+h2 {
+  font: normal 16px Georgia, "Times New Roman", Times, serif;
+  color: #999999;
+  margin: 0 0 0 12px;
+}
+p {
+  font: 14px Arial, Verdana, Times, serif;
+  color: #666666;
+  margin: 12px 12px 12px 12px;
+  border-style: none;
+}
+hr {
+  color: #CCCCCC;
+  height: 1px;
+  width: 100%;
+}
+
+.mainlinks {
+  font: 16px Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+}
+.mainlinks a:link {
+  color: #333333;
+  text-decoration: none;
+}
+.mainlinks a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.mainlinks a:hover {
+  color: #FFCC00;
+  text-decoration: none;
+}
+
+.vertrule {
+  border: #999999;
+  border-style: solid;
+  border-width: 0px 0px 0px 1px;
+  height: 100px;
+  width: 100%;
+}
+
+.sidebar {
+  font: 12px Verdana, Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+.sidebar a:link {
+  color: #666666;
+  text-decoration: underline;
+}
+.sidebar a:visited {
+  color: #999999;
+  text-decoration: underline;
+}
+.sidebar a:hover {
+  color: #FFFFFF;
+  background-color: #FF9900;
+}
+
+.footer {
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #999999
+}
+.footer a:link {
+  color: #666699;
+  text-decoration: none;
+}
+.footer a:visited {
+  color: #999999;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #99CC99;
+}
+
+.copyright {
+  font: 10px Arial, Helvetica, sans-serif;
+  color: #999999;
+}

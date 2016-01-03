@@ -1,54 +1,66 @@
-<HTML>
-<HEAD>
-<script>
-// Проверяем целостность фреймовой структуры
-var frameBusted = (top == self);
-// Если загружено не во фрейм, то загружаем
-if (frameBusted) top.location.href = 'index.html';
-</script>
-<link rel="stylesheet" href="images/main.css" type="text/css">
-<script type="text/javascript" src="images/tooltip.js"></script>
-<script type="text/javascript" name="date" language="javascript" src="images/date.js"></script>
-<script type="text/javascript" name="clock" language="javascript" src="images/clock.js"></script>
-</HEAD>
-<BODY style="background-image:url('images/grid.gif'); background-repeat:repeat; background-attachment:fixed;text-indent:0;">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="js/check.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/tooltip.js"></script>
+  <script name="date" src="js/date.js"></script>
+  <script name="clock" src="js/clock.js"></script>
+</head>
+
+<body style="background-image:url('images/grid.gif'); background-repeat:repeat; background-attachment:fixed;text-indent:0;">
 <br>
-<h4>Содержание</h4>
-<a href="index.html" class="sbttn" onmouseover="OverIm('hint1');" onmouseout="OutIm()"><b><NOBR>Главная</a></nobr></b><br>
-<a href="vved.html" target="display" class="sbttn" onmouseover="OverIm('hint2');" onmouseout="OutIm()"><b><nobr>Введение</nobr></b></a><br>
-<a href="main.html" target="display" class="sbttn" onmouseover="OverIm('hint3');" onmouseout="OutIm()"><b><nobr>Основная часть</nobr></b></a><br>
-<a href="zakl.html" target="display" class="sbttn" onmouseover="OverIm('hint4');" onmouseout="OutIm()"><b><nobr>Заключение</nobr></b></a><br>
-<a href="links.html" target="display" class="sbttn" onmouseover="OverIm('hint5');" onmouseout="OutIm()"><b><nobr>Ссылки</nobr></b></a><br>
-<p class="comment">Сегодня:
-<span id="ShowDate">
-<SCRIPT name="ShowDate" LANGUAGE="JavaScript">ShowDate();</SCRIPT></span>
+<h4>РЎРѕРґРµСЂР¶Р°РЅРёРµ</h4>
+<a href="index.html" class="sbttn" onmouseover="OverIm('hint1');" onmouseout="OutIm()">
+  <b>Р“Р»Р°РІРЅР°СЏ</b></a><br>
+<a href="vved.html" target="display" class="sbttn" onmouseover="OverIm('hint2');" onmouseout="OutIm()">
+  <b><nobr>Р’РІРµРґРµРЅРёРµ</nobr></b></a><br>
+<a href="main.html" target="display" class="sbttn" onmouseover="OverIm('hint3');" onmouseout="OutIm()">
+  <b><nobr>РћСЃРЅРѕРІРЅР°СЏ С‡Р°СЃС‚СЊ</nobr></b></a><br>
+<a href="zakl.html" target="display" class="sbttn" onmouseover="OverIm('hint4');" onmouseout="OutIm()">
+  <b><nobr>Р—Р°РєР»СЋС‡РµРЅРёРµ</nobr></b></a><br>
+<a href="links.html" target="display" class="sbttn" onmouseover="OverIm('hint5');" onmouseout="OutIm()">
+  <b><nobr>РЎСЃС‹Р»РєРё</nobr></b></a><br>
+
+<p class="comment">РЎРµРіРѕРґРЅСЏ:
+  <span id="ShowDate">
+    <script name="howdate" language="javascript">ShowDate();</script>
+  </span>
+</p>
 <p class="clock" id="ShowTime">
-<SCRIPT name="ShowTime" LANGUAGE="JavaScript">ShowTime();</SCRIPT></p>
-<!-- Блок описаний всплывающих подсказок -->
+  <script name="showtime" language="javascript">ShowTime();</script>
+</p>
+
+<!-- Р‘Р»РѕРє РѕРїРёСЃР°РЅРёР№ РІСЃРїР»С‹РІР°СЋС‰РёС… РїРѕРґСЃРєР°Р·РѕРє -->
 <!-- 1 -->
 <div id="hint1" class="opacity">
-<table class="tooltips"><tr><td class="tooltips">
-Возврат на титульную страницу
-</tr></td></table></div>
+  <div class="tooltips">
+    Р’РѕР·РІСЂР°С‚ РЅР° С‚РёС‚СѓР»СЊРЅСѓСЋ СЃС‚СЂР°РЅРёС†Сѓ
+  </div>
+</div>
 <!-- 2 -->
 <div id="hint2" class="opacity">
-<table class="tooltips"><tr><td class="tooltips">
-Ввведение, раскрывающее актуальность работы
-</td></tr></table></div>
+  <div class="tooltips">
+    Р’РІРµРґРµРЅРёРµ, СЂР°СЃРєСЂС‹РІР°СЋС‰РµРµ Р°РєС‚СѓР°Р»СЊРЅРѕСЃС‚СЊ СЂР°Р±РѕС‚С‹
+  </div>
+</div>
 <!-- 3 -->
 <div id="hint3" class="opacity">
-<table class="tooltips"><tr><td class="tooltips">
-Основная часть - изложение материала
-</td></tr></table></div>
+  <div class="tooltips">
+    РћСЃРЅРѕРІРЅР°СЏ С‡Р°СЃС‚СЊ - РёР·Р»РѕР¶РµРЅРёРµ РјР°С‚РµСЂРёР°Р»Р°
+  </div>
+</div>
 <!-- 4 -->
 <div id="hint4" class="opacity">
-<table class="tooltips"><tr><td class="tooltips">
-Выводы по работе
-</td></tr></table></div>
+  <div class="tooltips">
+    Р’С‹РІРѕРґС‹ РїРѕ СЂР°Р±РѕС‚Рµ
+  </div>
+</div>
 <!-- 5 -->
 <div id="hint5" class="opacity">
-<table class="tooltips"><tr><td class="tooltips">
-Ссылки на использованные ресурсы
-</td></tr></table></div>
-<!-- /Блок описаний всплывающих подсказок -->
-</BODY>
+  <div class="tooltips">
+    РЎСЃС‹Р»РєРё РЅР° РёСЃРїРѕР»СЊР·РѕРІР°РЅРЅС‹Рµ СЂРµСЃСѓСЂСЃС‹
+  </div>
+</div>
+<!-- /Р‘Р»РѕРє РѕРїРёСЃР°РЅРёР№ РІСЃРїР»С‹РІР°СЋС‰РёС… РїРѕРґСЃРєР°Р·РѕРє -->
+</body>
