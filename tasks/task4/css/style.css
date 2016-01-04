@@ -1,9 +1,22 @@
 body {
-	/*background: #ffffcc;*/
 	font: normal 11pt Arial, Helvetica, sans-serif;
 	color: #000000;
 	line-height: 125%;
 }
+
+.menu {
+	background-image:url('../images/grid.gif');
+	background-repeat:repeat;
+	background-attachment:fixed;
+	text-indent:0;
+}
+
+.top {
+	background:#ffffff url('../images/011.gif');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+
 table, tr, td {
 	font: normal 11pt Arial, Helvetica, sans-serif;
 	color: #000000;
