@@ -9,6 +9,7 @@ body {
 	background-repeat:repeat;
 	background-attachment:fixed;
 	text-indent:0;
+	margin-left: 10px;
 }
 
 .top {
@@ -16,6 +17,7 @@ body {
 	background-repeat:repeat;
 	background-attachment:fixed;
 }
+
 
 table, tr, td {
 	font: normal 11pt Arial, Helvetica, sans-serif;
@@ -74,8 +76,7 @@ a:active {
 }
 a:hover {
 	color: #003399;
-	text-decoration: underline;
-	font-weight: normal;
+	text-decoration: none;
 }
 ol, ul{
 	font: italic bolder 11pt "Courier New", Courier, monospace;
@@ -101,12 +102,17 @@ li{
 	border-top: #afc4d5 1px solid;
 	color: #000066;
 	cursor: hand;
-	height: 18px;
-	font-size: 12px;
+	height: 24px;
+	font-size: 13px;
+	font-weight: bold;
 	width: 125px;
-	margin-bottom: 5px;
-	padding-left: 5px;
-	}
+	text-decoration: none;
+}
+
+.sbttn:hover {
+
+}
+
 .tooltips {
 	font: normal 12px Arial, Helvetica,sans-serif;
 	background: #ffffc3;
