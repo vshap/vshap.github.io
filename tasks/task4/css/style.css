@@ -20,6 +20,7 @@ h3 {
   font-weight: bold;
   font-size: 12px;
   color: #3965B7;
+  margin: 10px 0 10px 0;
 }
 h4 {
   font: bold 12pt Arial, Helvetica, Sans-Serif;
@@ -156,7 +157,10 @@ header {
   margin-left: 15px;
   padding: 5px 0 0 10px;
 }
-
+.date {
+  color: #000066;
+  height: 14px;
+}
 .mobile_view {
   margin: 15px 0 10px 15px;
 }
@@ -182,7 +186,7 @@ header {
 
 /* ---------- CONTENT ------------- */
 .content {
-  float: right;
+/*  float: right;*/
   margin-left: 220px;
   margin-top: 75px;
 }
@@ -203,13 +207,25 @@ li {
   line-height: 125%;
 }
 
-.copy {
-  font: bold 12px Times New Roman,Roman;
-  color: gray;
+.titul {
+  text-align: center;
+  margin: 0 auto;
 }
 
+span {
+  display: block;
+  margin: 0 0 0 10px;
+}
 .comment {
+  float: right;
   font: bold 14px Times New Roman,Roman;
+}
+.copy {
+  clear: both;
+  font: bold 12px Times New Roman,Roman;
+  color: gray;
+  display: block;
+  text-align: center;
 }
 
 /* ---------- FOOTER ------------- */
