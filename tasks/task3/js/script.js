@@ -120,3 +120,5 @@ function P7AniMagic(el, x, y, a, b, c, s) { //v2.5 PVII
       g.moved = false;
     }
 }
+
+window.onload = P7AniMagic('babyLayer',0,11,96,30,0,0);

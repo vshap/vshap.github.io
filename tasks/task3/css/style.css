@@ -1,5 +1,6 @@
 body {
-	background: #ffffff url(../img/bg.png);
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff url(../img/bg.png);
   color: #000000;
 }
 p {
@@ -8,23 +9,60 @@ p {
 	margin: 10px 0 10px 0;
 }
 p:first-letter {
-	font: bold 18px Georgia, "Times New Roman", Times, serif;
-	color: Black;
+	font-size: 18px;
+  font-weight: bold;
+	color: #000000;
 }
 
-ul,ol {
+ul,
+ol {
 	font: 18px "Times New Roman", Times, serif;
-	color: #2F4F4F;
+	color: #2f4f4f;
 	margin: 10px 0 10px 0;
 }
 
-.babytd {
+.babytd ul,
+.babytd li {
   font: 16px Arial, Helvetica, sans-serif;
-  color: #FF9900;
-  word-wrap: nowrap;
+  color: #ff9900;
+  padding: 0;
+  display: inline;
 }
+.babytd li::after {
+  content: " |"
+}
+
+.links ul,
+.links ol,
+.links li {
+  font: 16px Arial, Helvetica, sans-serif;
+  color: #2f4f4f;
+  margin: 10px 0 10px 0;
+  list-style: none;
+}
+.links a {
+  text-decoration: none;
+  color: #2f4f4f;
+}
+.links a:hover {
+  color: #ff9900;
+  cursor: hand;
+}
+
+
+li.links__now {
+  font-weight: bold;
+  color: #ff9900;
+}
+li.links__now::before {
+  content: "> ";
+}
+li.links__now::after {
+  content: " < |";
+}
+
 .babytd a:link {
-  color: #FF9900;
+  color: #ff9900;
   text-decoration: none;
 }
 .babytd a:visited {
@@ -38,31 +76,45 @@ ul,ol {
   color: #333333;
   text-decoration: underline;
 }
+
 .orangehead {
-  font: normal 40px Arial, Helvetica, sans-serif;
-  color: #FFBE63;
-  margin: 0;
+  font-size: 40px;
+  color: #ffbe63;
+  margin: 5px 0 25px 0;
 }
 .grayhead {
-  font: 40px Arial, Helvetica, sans-serif;
-  color: #CCCCCC;
+  font-size: 40px;
+  color: #cccccc;
   margin: 0;
 }
 
 #splash {
-  position:absolute;
-  left:64px;
-  top:161px;
-  width:540px;
-  height:234px;
-  z-index:6;
+  position: absolute;
+  left: 64px;
+  top: 161px;
+  width: 540px;
+  height: 234px;
+  z-index: 6;
   visibility: visible;
 }
+#splash ol {
+  list-style: inside none decimal;
+}
+#splash ul {
+  list-style: inside none circle;
+}
+#splash li::after {
+  content: ";";
+}
+#splash li:last-child::after {
+  content: ".";
+}
+
 #daddyLayer {
-  position:absolute;
-  width:580px;
-  height:82px;
-  z-index:1;
+  position: absolute;
+  width: 580px;
+  height: 82px;
+  z-index: 1;
   left: 12px;
   top: 20px;
   overflow: hidden;
@@ -83,5 +135,5 @@ ul,ol {
   height: 28px;
   z-index: 1;
   top: 11px;
-  left: 0px;
+  left: 0;
 }
