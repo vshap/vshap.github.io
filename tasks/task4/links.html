@@ -1,31 +1,136 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script src="js/check.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.: Создание простейшей Web-страницы :.</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <base target="_self">
+  <script src="js/tooltip.js"></script>
+  <script name="date" src="js/date.js"></script>
+  <script name="clock" src="js/clock.js"></script>
 </head>
-
 <body>
-<h1>Список использованных источников</h1><br>
-<ol>
-<a name="1"></a>
-  <li>Информационные технологии в экономике и управлении: Учеб. пособие / А.Г. Ивасенко, А.Ю. Гридасов, В.А. Павленко. — М.:КНОРУС, 2005. — 160 с.</li>
-  <a name="2"></a>
-  <li>Уткин В.Б., Балдин К.В. — Информационные системы и технологии в экономике: Учебник для вузов. — М.: ЮНИТИ-ДАНА, 2003. — 335 с.</li>
-  <a name="3"></a>
-  <li>Информационные технологии в экономике / Под ред. д.э.н., проф. Ю.Ф. Симионова. Серия «Высшее образование». — Ростов-на-Дону: Феникс, 2003. — 352 с.</li>
-  <a name="4"></a>
-  <li>Информационные системы и технологии в экономике: Учебник для вузов / Т. П. Барановская; ред. В. И. Лойко. — 2-е изд., перераб. и доп.. — М.: Финансы и статистика, 2005. — 412 с.</li>
-  <a name="5"></a>
-  <li>Гришин В.Н., Панфилова Е.Е. Информационные технологии в профессиональной деятельности: Учебник. — М.: ФОРУМ: ИНФРА-М, 2005. — 416 с.</li>
-  <a name="6"></a>
-  <li>Информационные системы и технологии в экономике и управлении: Учеб. пособие / Под ред. проф. В.В. Трофимова. — 2-е изд., перераб. и доп.. — М.: Высшее образование, 2007. — 480 с.</li>
-  <a name="7"></a>
-  <li>Харитонова И., Михеева В. Microsoft Access 2000: Руководство. — СПб.: БХВ-Санкт-Петербург, 1999. — 1088 с.</li>
-  <a name="8"></a>
-  <li>Информатика. Базовый курс / Симонович С.В. и др. – СПб.: Изд-во Питер, 1999. – 640 с.</li>
-</ol>
+  <div class="container">
+
+    <header>
+      <div class="logo">
+        <a href="http://www2.tcde.ru" target="_blank">
+          <img src= "images/logo.gif" width="155" height="52" alt="Щелкни, чтобы перейти на сайт ТМЦДО">
+        </a>
+      </div>
+      <div class="marquee">
+        <marquee behavior="scroll" direction="right" scrolldelay="75" loop="-1">
+          <p class="m3">Я выбираю дистанционное образование!</p>
+          <p class="m2">Нет ничего проще...</p>
+          <p class="m1">Создать Web-сайт?</p>
+        </marquee>
+      </div>
+    </header>
+
+    <!-- Container for sidebar and main content -->
+    <div class="wrapper">
+      <div class="sidebar">
+        <h1 class="mobile_view">Содержание</h1>
+          <div class="links">
+            <ul>
+              <li><a href="index.html" class="links__btn">Главная</a></li>
+              <li><a href="vved.html" class="links__btn">Введение</a></li>
+              <li><a href="main.html" class="links__btn">Основная часть</a></li>
+              <li><a href="zakl.html" class="links__btn">Заключение</a></li>
+              <li><a href="#" class="links__btn">Ссылки</a></li>
+            </ul>
+          </div>
+
+          <!-- Блок описаний всплывающих подсказок -->
+          <!-- 1 -->
+          <div id="hint1" class="opacity">
+            <div class="tooltips">
+              Возврат на титульную страницу
+            </div>
+          </div>
+          <!-- 2 -->
+          <div id="hint2" class="opacity">
+            <div class="tooltips">
+              Введение, раскрывающее актуальность работы
+            </div>
+          </div>
+          <!-- 3 -->
+          <div id="hint3" class="opacity">
+            <div class="tooltips">
+              Основная часть - изложение материала
+            </div>
+          </div>
+          <!-- 4 -->
+          <div id="hint4" class="opacity">
+            <div class="tooltips">
+              Выводы по работе
+            </div>
+          </div>
+          <!-- 5 -->
+          <div id="hint5" class="opacity">
+            <div class="tooltips">
+              Ссылки на использованные ресурсы
+            </div>
+          </div>
+
+          <script src="js/addtooltip.js"></script>
+
+        <!-- Current Date and Time -->
+        <div class="comment mobile_view">Сегодня:
+          <span id="ShowDate">
+            <script language="javascript">ShowDate();</script>
+          </span>
+        </div>
+        <div class="clock mobile_view" id="ShowTime">
+          <script language="javascript">ShowTime();</script>
+        </div>
+      </div>
+
+      <a name="top"></a>
+      <div class="content">
+        <h1>Список использованных источников</h1>
+          <div class="li__number">
+            <ol>
+              <a name="1"></a>
+                <li>
+                  Информационные технологии в экономике и управлении: Учеб. пособие / А.&nbsp;Г.&nbsp;Ивасенко, А.&nbsp;Ю.&nbsp;Гридасов, В.&nbsp;А.&nbsp;Павленко. — М.:&nbsp;КНОРУС, 2005. — 160&nbsp;с.
+                </li>
+              <a name="2"></a>
+                <li>
+                  Уткин В.Б., Балдин К.В. — Информационные системы и технологии в экономике: Учебник для вузов. — М.:&nbsp;ЮНИТИ-ДАНА, 2003. — 335&nbsp;с.
+                </li>
+              <a name="3"></a>
+                <li>
+                  Информационные технологии в экономике / Под ред. д.э.н., проф. Ю. Ф. Симионова. Серия «Высшее образование». — Ростов-на-Дону: Феникс, 2003. — 352&nbsp;с.
+                </li>
+              <a name="4"></a>
+                <li>
+                  Информационные системы и технологии в экономике: Учебник для вузов / Т. П. Барановская; ред.&nbsp;В.&nbsp;И.&nbsp;Лойко. — 2-е изд., перераб. и доп.. — М.: Финансы и статистика, 2005. — 412&nbsp;с.
+                </li>
+              <a name="5"></a>
+                <li>
+                  Гришин В. Н., Панфилова Е. Е. Информационные технологии в профессиональной деятельности: Учебник. — М.: ФОРУМ: ИНФРА-М, 2005. — 416&nbsp;с.
+                </li>
+              <a name="6"></a>
+                <li>
+                  Информационные системы и технологии в экономике и управлении: Учеб. пособие / Под ред. проф. В.&nbsp;В.&nbsp;Трофимова. — 2-е изд., перераб. и доп.. — М.: Высшее образование, 2007. — 480&nbsp;с.
+                </li>
+              <a name="7"></a>
+                <li>
+                  Харитонова И., Михеева В. Microsoft Access 2000: Руководство. — СПб.: БХВ-Санкт-Петербург, 1999. — 1088&nbsp;с.
+                </li>
+              <a name="8"></a>
+                <li>
+                  Информатика. Базовый курс / Симонович С. В. и др. – СПб.: Изд-во Питер, 1999. – 640&nbsp;с.
+                </li>
+            </ol>
+          </div>
+          <a href="#top">К началу страницы</a>
+      </div>
+
+    <footer>
+    </footer>
+  </div>
 </body>
 </html>

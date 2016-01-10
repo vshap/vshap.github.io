@@ -1,18 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>.: Создание простейшей Web-страницы :.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>.: Создание простейшей Web-страницы :.</title>
   <link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/start.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/tooltip.js"></script>
+  <script name="date" src="js/date.js"></script>
+  <script name="clock" src="js/clock.js"></script>
 </head>
+<body>
+  <div class="container">
 
-<frameset rows="75,*" framespacing="0" border="0" frameborder="0">
-	<frame src="top.html" scrolling="no" noresize>
-	<frameset cols="220,*" framespacing="0" border="0" frameborder="0">
-		<frame name="menu" src="menu.html" target="display" scrolling="no">
-		<frame name="display" src="titul.html" scrolling="auto" noresize target="_self">
-	</frameset>
-</frameset>
+    <header>
+      <div class="logo">
+        <a href="http://www2.tcde.ru" target="_blank">
+          <img src= "images/logo.gif" width="155" height="52" alt="Щелкни, чтобы перейти на сайт ТМЦДО">
+        </a>
+      </div>
+      <div class="marquee">
+        <marquee behavior="scroll" direction="right" scrolldelay="75" loop="-1">
+          <p class="m3">Я выбираю дистанционное образование!</p>
+          <p class="m2">Нет ничего проще...</p>
+          <p class="m1">Создать Web-сайт?</p>
+        </marquee>
+      </div>
+    </header>
+
+    <!-- Container for sidebar and main content -->
+    <div class="wrapper">
+      <div class="sidebar">
+        <h1 class="mobile_view">Содержание</h1>
+          <div class="links">
+            <ul>
+              <li><a href="#" class="links__btn">Главная</a></li>
+              <li><a href="vved.html" class="links__btn">Введение</a></li>
+              <li><a href="main.html" class="links__btn">Основная часть</a></li>
+              <li><a href="zakl.html" class="links__btn">Заключение</a></li>
+              <li><a href="links.html" class="links__btn">Ссылки</a></li>
+            </ul>
+          </div>
+
+          <!-- Блок описаний всплывающих подсказок -->
+          <!-- 1 -->
+          <div id="hint1" class="opacity">
+            <div class="tooltips">
+              Возврат на титульную страницу
+            </div>
+          </div>
+          <!-- 2 -->
+          <div id="hint2" class="opacity">
+            <div class="tooltips">
+              Введение, раскрывающее актуальность работы
+            </div>
+          </div>
+          <!-- 3 -->
+          <div id="hint3" class="opacity">
+            <div class="tooltips">
+              Основная часть - изложение материала
+            </div>
+          </div>
+          <!-- 4 -->
+          <div id="hint4" class="opacity">
+            <div class="tooltips">
+              Выводы по работе
+            </div>
+          </div>
+          <!-- 5 -->
+          <div id="hint5" class="opacity">
+            <div class="tooltips">
+              Ссылки на использованные ресурсы
+            </div>
+          </div>
+
+          <script src="js/addtooltip.js"></script>
+
+        <!-- Current Date and Time -->
+        <div class="comment mobile_view">Сегодня:
+          <span id="ShowDate">
+            <script language="javascript">ShowDate();</script>
+          </span>
+        </div>
+        <div class="clock mobile_view" id="ShowTime">
+          <script language="javascript">ShowTime();</script>
+        </div>
+      </div>
+
+      <div class="content">
+
+        <h1>Задание №3</h1>
+        <h1>Создание простейшей Web-страницы</h1>
+
+        <h4>Курсовая работа по дисциплине:</h4>
+        <h3>Информационные технологии</h3>
+        <img src="images/1.jpg" width="150" height="142" alt="Это я, выполняю работу по ИТ" title="Это я, выполняю работу по ИТ">
+
+        <p class="comment">Выполнил:</p>
+        <p class="comment">Иванов И.И., г.Томск группа 111, ТУСУР</p>
+
+        <p class="comment">Проверил:</p>
+        <p class="comment">доцент Петров П.П.</p>
+
+        <span class="copy">
+          &copy; Иванов И. И., 2011
+        </span>
+      </div>
+
+    <footer>
+    </footer>
+  </div>
+</body>
 </html>
