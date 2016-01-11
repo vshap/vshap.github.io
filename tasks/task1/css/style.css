@@ -1,6 +1,10 @@
+body {
+  background: #ffffff;
+  color: #000000;
+}
 h1 {
   font: normal 28px Georgia, "Times New Roman", Times, serif;
-  color: #CCCCCC;
+  color: #cccccc;
   letter-spacing: 3px;
 }
 h2 {
@@ -15,7 +19,7 @@ p {
   border-style: none;
 }
 hr {
-  color: #CCCCCC;
+  color: #cccccc;
   height: 1px;
   width: 100%;
 }
@@ -29,11 +33,11 @@ hr {
   text-decoration: none;
 }
 .mainlinks a:visited {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 .mainlinks a:hover {
-  color: #FFCC00;
+  color: #ffcc00;
   text-decoration: none;
 }
 
@@ -58,7 +62,7 @@ hr {
   text-decoration: underline;
 }
 .sidebar a:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #FF9900;
 }
 
@@ -75,7 +79,7 @@ hr {
   text-decoration: none;
 }
 .footer a:hover {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   background-color: #99CC99;
 }

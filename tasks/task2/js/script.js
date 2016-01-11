@@ -87,3 +87,5 @@ for (i = 0; i < (args.length-2); i+= 3)
   obj.visibility = v;
   }
 }
+
+window.onload = MM_preloadImages('img/tab_f01.gif','img/tab_f02.gif','img/tab_f03.gif','img/tab_f04.gif','img/tab_f05.gif');

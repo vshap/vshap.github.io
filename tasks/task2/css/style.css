@@ -1,14 +1,22 @@
-body, p, ul, ol {
+body,
+p,
+ul,
+ol {
 	font: normal 14px Verdana, Arial, Helvetica, sans-serif;
 	color: #999966;
 	margin: 0;
 }
 body {
-	background: #cccc99 url(../img/newbackgroundb2.gif) repeat-x;
+	background: #cccc99 url(../img/bg.gif) repeat-x;
+	color: #000000;
+	height: 60%;
 }
 td {
 	font: 14px Verdana, Arial, Helvetica, sans-serif;
 	color: #666633;
+}
+p {
+	padding: 5px 15px 5px 10px;
 }
 p:first-letter {
 	font: bold 16px Verdana, Arial, Helvetica, sans-serif;
@@ -63,48 +71,68 @@ a:active {
 	color: #666600;
 }
 
+.content {
+	background: #ffffff;
+	width: 75%;
+	float: left;
+	height: 100%;
+	overflow: auto;
+}
+.sidebar {
+	width: 25%;
+	background: #999966;
+	text-align: center;
+	float: right;
+	height: 100%;
+}
+
 #content1 {
 	position:absolute;
 	left:0;
 	top:109px;
-	width:100%;
+	width:95%;
 	z-index:1;
+	height: 80%;
 }
 
 #content2 {
 	position:absolute;
 	left:0;
 	top:109px;
-	width:100%;
+	width:95%;
 	z-index:2;
 	visibility: hidden;
+	height: 80%;
 }
 
 #content3 {
 	position:absolute;
 	left:0;
 	top:109px;
-	width:100%;
+	width:95%;
 	z-index:2;
 	visibility: hidden;
+	height: 80%;
 }
 
 #content4 {
 	position:absolute;
 	left:0;
 	top:109px;
-	width:100%;
+	width:95%;
 	z-index:2;
 	visibility: hidden;
+	height: 80%;
 }
 
 #content5 {
 	position:absolute;
 	left:0;
 	top:109px;
-	width:100%;
+	width:95%;
 	z-index:2;
 	visibility: hidden;
+	height: 80%;
 }
 
 #triggers1 {
